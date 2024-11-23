@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showroom d'Intérieur</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <h1>Showroom d'Intérieur</h1>
+        <p>Adresse : 123 Rue fleur, Sokra  | Téléphone : +216 56 391 611</p>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="retourAccueil()">l'accueil</a></li>
+                <li><a href="#" id="salonsLink">Salons</a></li>
+                <li><a href="#" id="chambresLink">Chambres à coucher</a></li>
+                <li><a href="#" id="tapisLink">Tapis</a></li>
+                <li><a href="#" id="bureauxLink">Bureaux</a></li>
+                <li><a href="#" id="chaisesLink">Chaises</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <section id="accueil">
+        <h2>Bienvenue dans notre Showroom</h2>
+        <p>Découvrez nos collections uniques pour transformer vos espaces avec élégance et confort.</p>
+        
+     <div id="blackFridayMessage" class="animated-message">
+        <h3>🎉 Black Friday : -30% sur tout le showroom! 🎉</h3>
+        <p>Profitez-en vite, l'offre est limitée !</p>
+     </div>
+    </section>
+
+    <!-- Catégories cachées -->
+    <section id="salons" class="categorie">
+        <h2>Salons</h2>
+        <div class="galerie">
+            <img src="images/salon1.jpg" alt="Salon 1"class="image" onclick="agrandirImage(this)">
+            <p>Prix : 3000d</p>
+            <button class="commande" onclick="commander('Salon')">Commander</button>
+           <img src="images/salon2.jpg" alt="Salon 2"class="image" onclick="agrandirImage(this)">
+            <p>Prix : 3300d</p>
+            <button class="commande" onclick="commander('Salon')">Commander</button>
+            <img src="images/salon3.jpg" alt="Salon 3"class="image" onclick="agrandirImage(this)">
+            <p>Prix : 4000d</p>
+            <button class="commande" onclick="commander('Salon')">Commander</button>
+            <img src="images/salon4.jpg" alt="Salon 4"class="image" onclick="agrandirImage(this)">
+            <p>Prix : 2900d</p>
+            <button class="commande" onclick="commander('Salon')">Commander</button>
+            <img src="images/salon5.jpg" alt="Salon 5"class="image" onclick="agrandirImage(this)">
+            <p>Prix : 4800d</p>
+            <button class="commande" onclick="commander('Salon')">Commander</button>
+            <img src="images/salon6.jpg" alt="Salon 6"class="image" onclick="agrandirImage(this)">
+            <p>Prix : 4500d</p>
+            <button class="commande" onclick="commander('Salon')">Commander</button>
+            <img src="images/salon7.jpg" alt="Salon 7"class="image" onclick="agrandirImage(this)">
+            <p>Prix : 6000d</p>
+            <button class="commande" onclick="commander('Salon')">Commander</button>
+            <img src="images/salon8.jpg" alt="Salon 8"class="image" onclick="agrandirImage(this)">
+            <p>Prix : 5500d</p>
+            <button class="commande" onclick="commander('Salon')">Commander</button>
+        </div>
+        
+    </section>
+
+    <section id="chambres" class="categorie">
+        <h2>Chambres à coucher</h2>
+        <div class="galerie">
+            <img src="images/chambre1.jpg" alt="Chambre 1"class="image" onclick="agrandirImage(this)">
+            <p>Prix : 5000d</p>
+            <button class="commande" onclick="commander('Salon')">Commander</button>
+            <img src="images/chambre2.jpg" alt="Chambre 2"class="image" onclick="agrandirImage(this)">
+            <p>Prix : 3500d</p>
+            <button class="commande" onclick="commander('Salon')">Commander</button>
+            <img src="images/chambre3.jpg" alt="Chambre 3"class="image" onclick="agrandirImage(this)">
+            <p>Prix : 3600d</p>
+            <button class="commande" onclick="commander('Salon')">Commander</button>
+            <img src="images/chambre4.jpg" alt="Chambre 4"class="image" onclick="agrandirImage(this)">
+            <p>Prix : 4000d</p>
+            <button class="commande" onclick="commander('Salon')">Commander</button>
+            <img src="images/chambre5.jpg" alt="Chambre 5"class="image" onclick="agrandirImage(this)">
+            <p>Prix : 7000d</p>
+            <button class="commande" onclick="commander('Salon')">Commander</button>
+            <img src="images/chambre6.jpg" alt="Chambre 6"class="image" onclick="agrandirImage(this)">
+            <p>Prix : 4500d</p>
+            <button class="commande" onclick="commander('Salon')">Commander</button>
+            <img src="images/chambre7.jpg" alt="Chambre 7"class="image" onclick="agrandirImage(this)">
+            <p>Prix : 5500d</p>
+            <button class="commande" onclick="commander('Salon')">Commander</button>
+            <img src="images/chambre2.jpg" alt="Chambre 8"class="image" onclick="agrandirImage(this)">
+            <p>Prix : 6200d</p>
+            <button class="commande" onclick="commander('Salon')">Commander</button>
+        </div>
+    </section>
+
+    <section id="tapis" class="categorie">
+        <h2>Tapis</h2>
+        <div class="galerie">
+            <img src="images/tapis1.jpg" alt="Tapis 1"class="image" onclick="agrandirImage(this)">
+            <p>Prix : 400d</p>
+            <button class="commande" onclick="commander('Salon')">Commander</button>
+            <img src="images/tapis2.jpg" alt="Tapis 2"class="image" onclick="agrandirImage(this)">
+            <p>Prix : 250d</p>
+            <button class="commande" onclick="commander('Salon')">Commander</button>
+            <img src="images/tapis3.jpg" alt="Tapis 3"class="image" onclick="agrandirImage(this)">
+            <p>Prix : 200d</p>
+            <button class="commande" onclick="commander('Salon')">Commander</button>
+            <img src="images/tapis4.jpg" alt="Tapis 4"class="image" onclick="agrandirImage(this)">
+            <p>Prix : 350d</p>
+            <button class="commande" onclick="commander('Salon')">Commander</button>
+            <img src="images/tapis5.jpg" alt="Tapis 5"class="image" onclick="agrandirImage(this)">
+            <p>Prix : 250d</p>
+            <button class="commande" onclick="commander('Salon')">Commander</button>
+            <img src="images/tapis6.jpg" alt="Tapis 6"class="image" onclick="agrandirImage(this)">
+            <p>Prix : 300d</p>
+            <button class="commande" onclick="commander('Salon')">Commander</button>
+            <img src="images/tapis7.jpg" alt="Tapis 7"class="image" onclick="agrandirImage(this)">
+            <p>Prix : 280d</p>
+            <button class="commande" onclick="commander('Salon')">Commander</button>
+            <img src="images/tapis8.jpg" alt="Tapis 8"class="image" onclick="agrandirImage(this)">
+            <p>Prix : 350d</p>
+            <button class="commande" onclick="commander('Salon')">Commander</button>
+        </div>
+    </section>
+
+    <section id="bureaux" class="categorie">
+        <h2>Bureaux</h2>
+        <div class="galerie">
+            <img src="images/bureau1.jpg" alt="Bureau 1"class="image" onclick="agrandirImage(this)">
+            <p>Prix : 1500d</p>
+            <button class="commande" onclick="commander('Salon')">Commander</button>
+            <img src="images/bureau2.jpg" alt="Bureau 2"class="image" onclick="agrandirImage(this)">
+            <p>Prix : 1700d</p>
+            <button class="commande" onclick="commander('Salon')">Commander</button>
+            <img src="images/bureau3.jpg" alt="Bureau 3"class="image" onclick="agrandirImage(this)">
+            <p>Prix : 1500d</p>
+            <button class="commande" onclick="commander('Salon')">Commander</button>
+            <img src="images/bureau4.jpg" alt="Bureau 4"class="image" onclick="agrandirImage(this)">
+            <p>Prix : 1800d</p>
+            <button class="commande" onclick="commander('Salon')">Commander</button>
+            <img src="images/bureau5.jpg" alt="Bureau 5"class="image" onclick="agrandirImage(this)">
+            <p>Prix : 1500d</p>
+            <button class="commande" onclick="commander('Salon')">Commander</button>
+            <img src="images/bureau6.jpg" alt="Bureau 6"class="image" onclick="agrandirImage(this)">
+            <p>Prix : 1700d</p>
+            <button class="commande" onclick="commander('Salon')">Commander</button>
+            <img src="images/bureau7.jpg" alt="Bureau 7"class="image" onclick="agrandirImage(this)">
+            <p>Prix : 1600d</p>
+            <button class="commande" onclick="commander('Salon')">Commander</button>
+            <img src="images/bureau8.jpg" alt="Bureau 8"class="image" onclick="agrandirImage(this)">
+            <p>Prix : 1750d</p>
+            <button class="commande" onclick="commander('Salon')">Commander</button>
+        </div>
+    </section>
+
+    <section id="chaises" class="categorie">
+        <h2>Chaises</h2>
+        <div class="galerie">
+            <img src="images/chaise1.jpg" alt="Chaise 1"class="image" onclick="agrandirImage(this)">
+            <p>Prix : 150d</p>
+            <button class="commande" onclick="commander('Salon')">Commander</button>
+            <img src="images/chaise2.jpg" alt="Chaise 2"class="image" onclick="agrandirImage(this)">
+            <p>Prix : 250d</p>
+            <button class="commande" onclick="commander('Salon')">Commander</button>
+            <img src="images/chaise3.jpg" alt="Chaise 3"class="image" onclick="agrandirImage(this)">
+            <p>Prix : 80d</p>
+            <button class="commande" onclick="commander('Salon')">Commander</button>
+            <img src="images/chaise4.jpg" alt="Chaise 4"class="image" onclick="agrandirImage(this)">
+            <p>Prix : 150d</p>
+            <button class="commande" onclick="commander('Salon')">Commander</button>
+            <img src="images/chaise5.jpg" alt="Chaise 5"class="image" onclick="agrandirImage(this)">
+            <p>Prix : 90d</p>
+            <button class="commande" onclick="commander('Salon')">Commander</button>
+            <img src="images/chaise6.jpg" alt="Chaise 6"class="image" onclick="agrandirImage(this)">
+            <p>Prix : 100d</p>
+            <button class="commande" onclick="commander('Salon')">Commander</button>
+            <img src="images/chaise7.jpg" alt="Chaise 7"class="image" onclick="agrandirImage(this)">
+            <p>Prix : 200d</p>
+            <button class="commande" onclick="commander('Salon')">Commander</button>
+            <img src="images/chaise8.jpg" alt="Chaise 8"class="image" onclick="agrandirImage(this)">
+            <p>Prix : 180d</p>
+            <button class="commande" onclick="commander('Salon')">Commander</button>
+        </div>
+    </section>
+
+  
+
+    <footer>
+        <p>&copy; 2024 Showroom d'Intérieur. Tous droits réservés.</p>
+    </footer>
+
+    <!-- Placer le script à la fin du fichier body -->
+    <script src="script1.js"></script>
+</body>
+</html>

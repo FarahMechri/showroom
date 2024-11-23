@@ -1,0 +1,206 @@
+body { 
+    font-family: 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background-color: pink;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    background-color: #f8d7da;
+    padding: 20px;
+    color: #4a4a4a; /* Ajout du point-virgule manquant ici */
+}
+
+header h1 {
+    font-family: 'Script MT Bold', cursive;
+    color: #a0525a;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #a0525a;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ffe4e1; /* Survol plus rosé */
+}
+
+#accueil {
+    text-align: center;
+    margin: 20px;
+}
+#blackFridayMessage {
+    background-color: #ff4c4c;  /* Couleur rouge dynamique */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 20px;
+    position: relative;
+    animation: bounceIn 1s ease-out forwards, fadeIn 2s ease-in-out 2s;
+}
+
+#blackFridayMessage h3 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#blackFridayMessage p {
+    font-size: 1.5rem;
+}
+
+/* Animation d'apparition et de rebond */
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.3);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.categorie {
+    display: none;
+    text-align: center;
+    background-color: #ffe4e1; /* Fond rosé pour sections */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.categorie h2 {
+    text-align: center;
+    font-size: 1.5em;
+    color: #a0525a;
+}
+
+.galerie {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+}
+
+.galerie img {
+    width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: auto;
+    margin: 10px;
+    width: 150px;
+    transition: transform 0.3s ease;
+}
+
+.galerie a:hover img {
+    transform: scale(1.05);
+}
+
+.galerie p {
+    font-size: 1em;
+    font-weight: bold;
+    color: #333;
+}
+
+.article button:hover {
+    background-color: #d81b60; /* Légèrement plus foncé au survol */
+}
+
+footer {
+    text-align: center;
+    background-color: #f8d7da;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%; /* Correction de la largeur du footer */
+    color: #4a4a4a;
+
+}
+/* Masquer la fenêtre lightbox par défaut */
+#lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Fond sombre pour mieux voir l'image */
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Empêche le défilement */
+}
+
+/* Style pour l'image agrandie en plein écran */
+#lightbox img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Garder les proportions de l'image */
+}
+
+/* Fermeture du lightbox */
+#lightbox .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    z-index: 10000;
+}
+/* Style des boutons de commande */
+button.commande {
+    background-color: #ffb6c1; /* Rose plus clair */
+    color: white;
+    padding: 10px 20px; /* Un peu plus de padding pour rendre le bouton plus visible */
+    border: none;
+    border-radius: 5px; /* Bords légèrement arrondis */
+    font-size: 14px; /* Taille de police plus grande pour un bouton lisible */
+    cursor: pointer;
+    width: 100%; /* Largeur à 100% pour que le bouton occupe toute la largeur de son conteneur */
+    display: block; /* Affichage en bloc pour le mettre sous l'image */
+    margin: 10px auto; /* Marge au dessus et au dessous pour espacer l'image et le bouton */
+    transition: background-color 0.3s;
+    text-align: center; /* Centrer le texte du bouton */
+}
+
+/* Style au survol du bouton */
+button.commande:hover {
+    background-color: #ff69b4; /* Rose plus foncé */
+    
